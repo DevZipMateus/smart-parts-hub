@@ -47,7 +47,7 @@ const About = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-2 border-border hover:border-primary transition-colors md:col-span-1 md:col-start-2">
+          <Card className="border-2 border-border hover:border-primary transition-colors">
             <CardContent className="pt-6">
               <div className="flex justify-center mb-4">
                 <div className="p-4 bg-primary/10 rounded-full">
