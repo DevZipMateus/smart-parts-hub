@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section 
       id="inicio" 
-      className="pt-20 pb-16 md:pt-24 md:pb-24 relative overflow-hidden"
+      className="pt-32 pb-16 md:pt-36 md:pb-24 relative overflow-hidden"
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: 'cover',
