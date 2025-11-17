@@ -1,5 +1,6 @@
 import { Target, Heart, TrendingUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import warehouseImage from "@/assets/about-warehouse.jpg";
 
 const About = () => {
   return (
@@ -12,6 +13,14 @@ const About = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Conheça nossa visão, missão e valores que nos tornam referência em peças para celulares no Rio Grande do Sul.
           </p>
+        </div>
+
+        <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
+          <img 
+            src={warehouseImage} 
+            alt="Estoque organizado de peças para celulares da SMART PARTS NH" 
+            className="w-full h-64 md:h-96 object-cover"
+          />
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
