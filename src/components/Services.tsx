@@ -1,5 +1,6 @@
 import { Shield, Zap, Package, Headphones, CheckCircle, Truck } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import deliveryImage from "@/assets/services-delivery.jpg";
 
 const Services = () => {
   const services = [
@@ -65,6 +66,14 @@ const Services = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
+          <img 
+            src={deliveryImage} 
+            alt="Serviço de entrega rápida de peças para celulares" 
+            className="w-full h-64 md:h-96 object-cover"
+          />
         </div>
 
         <div className="bg-primary text-primary-foreground rounded-xl p-8 md:p-12 text-center">

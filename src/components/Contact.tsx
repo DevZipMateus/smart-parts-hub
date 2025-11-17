@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Clock, Instagram } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import storeImage from "@/assets/contact-store.jpg";
 
 const Contact = () => {
   return (
@@ -12,6 +13,14 @@ const Contact = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Estamos prontos para atender você. Entre em contato através de um de nossos canais.
           </p>
+        </div>
+
+        <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
+          <img 
+            src={storeImage} 
+            alt="Loja SMART PARTS NH - Ambiente profissional de atendimento" 
+            className="w-full h-64 md:h-96 object-cover"
+          />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
