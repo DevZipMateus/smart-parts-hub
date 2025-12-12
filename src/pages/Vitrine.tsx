@@ -36,19 +36,17 @@ const Vitrine = () => {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      {/* Header fixo - 80px */}
-      <header className="fixed top-0 left-0 right-0 h-20 w-full z-10">
-        <Header />
-      </header>
+      {/* Header fixo */}
+      <Header />
 
       {/* Iframe ocupando o espaço entre header e badge */}
       <iframe
         src="https://smartparts.egestor.com.br/vitrine/"
         title="Vitrine SMART PARTS NH"
-        className="fixed top-20 left-0 right-0 w-full z-0 border-none"
+        className="fixed left-0 right-0 w-full border-none"
         style={{
-          height: "calc(100vh - 143px)",
-          bottom: "63px",
+          top: "88px",
+          height: "calc(100vh - 151px)",
         }}
         allowFullScreen
       />
