@@ -39,21 +39,17 @@ const Vitrine = () => {
       {/* Header fixo */}
       <Header />
 
-      {/* Iframe ocupando o espaço entre header e badge */}
+      {/* Iframe ocupando toda a área abaixo do header */}
       <iframe
         src="https://smartparts.egestor.com.br/vitrine/"
         title="Vitrine SMART PARTS NH"
         className="fixed left-0 right-0 w-full border-none"
         style={{
           top: "112px",
-          height: "calc(100vh - 175px)",
+          height: "calc(100vh - 112px)",
         }}
         allowFullScreen
       />
-
-      {/* Badge inferior fixo - 63px */}
-      <div id="montesite-footer-badge" />
-      <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe" />
     </>
   );
 };
