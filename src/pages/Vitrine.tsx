@@ -12,7 +12,13 @@ const Vitrine = () => {
     document.body.style.margin = "0";
     document.body.style.padding = "0";
 
-    // Cleanup function to restore overflow when unmounting
+    // Hide MonteSite badge on Vitrine page
+    const badge = document.getElementById("montesite-footer-badge");
+    if (badge) {
+      badge.style.display = "none";
+    }
+
+    // Cleanup function to restore overflow and badge when unmounting
     return () => {
       document.documentElement.style.overflow = "";
       document.documentElement.style.height = "";
@@ -20,6 +26,11 @@ const Vitrine = () => {
       document.body.style.height = "";
       document.body.style.margin = "";
       document.body.style.padding = "";
+      
+      // Restore badge visibility
+      if (badge) {
+        badge.style.display = "";
+      }
     };
   }, []);
 
