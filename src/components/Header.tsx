@@ -1,9 +1,14 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const isVitrinePage = location.pathname === "/vitrine";
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -11,7 +16,12 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   const scrollToSection = (id: string) => {
+    if (isVitrinePage) {
+      window.location.href = `/#${id}`;
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       const headerOffset = 80;
@@ -24,11 +34,15 @@ const Header = () => {
     }
     setIsMenuOpen(false);
   };
-  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-sm shadow-md" : "bg-background"}`}>
+
+  return (
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-sm shadow-md" : "bg-background"}`}>
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src={logo} alt="SMART PARTS NH Logo" className="h-20 w-20" />
+            <Link to="/">
+              <img src={logo} alt="SMART PARTS NH Logo" className="h-20 w-20" />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
@@ -42,6 +56,9 @@ const Header = () => {
             <button onClick={() => scrollToSection("servicos")} className="text-foreground hover:text-primary transition-colors">
               Serviços
             </button>
+            <Link to="/vitrine" className="text-foreground hover:text-primary transition-colors">
+              Vitrine
+            </Link>
             <button onClick={() => scrollToSection("contato")} className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-accent transition-colors">
               Contato
             </button>
@@ -54,7 +71,8 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && <div className="md:hidden mt-4 pb-4 space-y-4">
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 space-y-4">
             <button onClick={() => scrollToSection("inicio")} className="block w-full text-left text-foreground hover:text-primary transition-colors py-2">
               Início
             </button>
@@ -64,11 +82,17 @@ const Header = () => {
             <button onClick={() => scrollToSection("servicos")} className="block w-full text-left text-foreground hover:text-primary transition-colors py-2">
               Serviços
             </button>
+            <Link to="/vitrine" className="block w-full text-left text-foreground hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
+              Vitrine
+            </Link>
             <button onClick={() => scrollToSection("contato")} className="block w-full text-left bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-accent transition-colors">
               Contato
             </button>
-          </div>}
+          </div>
+        )}
       </nav>
-    </header>;
+    </header>
+  );
 };
+
 export default Header;
