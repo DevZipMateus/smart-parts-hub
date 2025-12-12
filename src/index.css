@@ -133,5 +133,8 @@ All colors MUST be HSL.
   height: 63px !important;
   margin: 0 !important;
   padding: 0 !important;
-  display: block !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
 }
