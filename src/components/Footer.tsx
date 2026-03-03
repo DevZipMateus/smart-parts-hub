@@ -70,13 +70,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-foreground mb-4">Contato</h3>
             <div className="space-y-3">
               <a
-                href="https://wa.me/5551995991833"
+                href="https://wa.me/5551999921833"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
               >
                 <Phone size={16} />
-                (51) 99599-1833
+                (51) 99992-1833
               </a>
               <a
                 href="mailto:SMARTPARTSNH@GMAIL.COM"

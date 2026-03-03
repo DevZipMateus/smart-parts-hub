@@ -30,7 +30,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
-                href="https://wa.me/5551995991833"
+                href="https://wa.me/5551999921833"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 sm:px-8 sm:py-4 rounded-lg hover:bg-accent transition-colors text-base sm:text-lg font-semibold"

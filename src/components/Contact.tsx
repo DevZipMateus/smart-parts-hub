@@ -33,12 +33,12 @@ const Contact = () => {
               </div>
               <h3 className="font-semibold text-foreground mb-2">Telefone</h3>
               <a 
-                href="https://wa.me/5551995991833"
+                href="https://wa.me/5551999921833"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                (51) 99599-1833
+                (51) 99992-1833
               </a>
             </CardContent>
           </Card>
@@ -102,7 +102,7 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a
-                href="https://wa.me/5551995991833"
+                href="https://wa.me/5551999921833"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-background text-foreground px-6 py-3 sm:px-8 sm:py-4 rounded-lg hover:bg-secondary transition-colors text-base sm:text-lg font-semibold"
