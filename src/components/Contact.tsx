@@ -69,8 +69,8 @@ const Contact = () => {
               </div>
               <h3 className="font-semibold text-foreground mb-2">Endereço</h3>
               <p className="text-muted-foreground">
-                Rua Julio de Castilhos, 10<br />
-                Rio Grande do Sul
+                 Av Pedro Adams Filho, 5573 Sala 507<br />
+                 Rio Grande do Sul
               </p>
             </CardContent>
           </Card>

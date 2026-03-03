@@ -87,7 +87,7 @@ const Footer = () => {
               </a>
               <div className="flex items-start gap-2 text-muted-foreground text-sm">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0" />
-                <span>Rua Julio de Castilhos, 10<br />Rio Grande do Sul</span>
+                <span>Av Pedro Adams Filho, 5573 Sala 507<br />Rio Grande do Sul</span>
               </div>
               <a
                 href="https://www.instagram.com/smartparts_nh"
