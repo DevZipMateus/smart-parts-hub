@@ -34,6 +34,11 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 sm:px-8 sm:py-4 rounded-lg hover:bg-accent transition-colors text-base sm:text-lg font-semibold"
+                onClick={() => {
+                  if (typeof window.gtag === 'function') {
+                    window.gtag('event', 'conversion', {'send_to': 'AW-17990045176/irIqCPXzw4IcEPibqYJD'});
+                  }
+                }}
               >
                 <Phone size={20} />
                 Fale conosco
