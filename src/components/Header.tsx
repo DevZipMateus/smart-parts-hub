@@ -123,7 +123,7 @@ const Header = () => {
               className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Vitrine
+              Produtos
             </Link>
             <button
               onClick={() => scrollToSection("contato")}

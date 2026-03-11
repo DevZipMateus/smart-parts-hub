@@ -37,13 +37,13 @@ const Vitrine = () => {
   return (
     <>
       <Helmet>
-        <title>Demonstração de Vitrine - SMART PARTS NH LTDA</title>
+        <title>Produtos - SMART PARTS NH LTDA</title>
         <meta
           name="description"
-          content="Confira nossa vitrine completa de produtos"
+          content="Confira nossa linha completa de produtos"
         />
-        <meta property="og:title" content="Demonstração de Vitrine - SMART PARTS NH LTDA" />
-        <meta property="og:description" content="Confira nossa vitrine completa de produtos" />
+        <meta property="og:title" content="Produtos - SMART PARTS NH LTDA" />
+        <meta property="og:description" content="Confira nossa linha completa de produtos" />
         <meta property="og:type" content="website" />
       </Helmet>
 
