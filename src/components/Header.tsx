@@ -77,7 +77,7 @@ const Header = () => {
               to="/vitrine"
               className="text-foreground hover:text-primary transition-colors"
             >
-              Vitrine
+              Produtos
             </Link>
             <button
               onClick={() => scrollToSection("contato")}
