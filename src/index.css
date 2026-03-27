@@ -95,7 +95,13 @@ All colors MUST be HSL.
   }
 }
 
-@layer base {
+@media (min-width: 768px) {
+  :root {
+    --header-height: 112px;
+  }
+}
+
+
   * {
     @apply border-border;
   }
