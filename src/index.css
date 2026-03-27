@@ -8,6 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    --header-height: 72px;
     --background: 0 0% 100%;
     --foreground: 0 0% 10%;
 
@@ -94,7 +95,13 @@ All colors MUST be HSL.
   }
 }
 
-@layer base {
+@media (min-width: 768px) {
+  :root {
+    --header-height: 112px;
+  }
+}
+
+
   * {
     @apply border-border;
   }
