@@ -57,7 +57,7 @@ const Vitrine = () => {
         className="fixed left-0 right-0 w-full border-none"
         style={{
           top: "112px",
-          height: "calc(100vh - 112px)",
+          height: "calc(100dvh - 112px)",
         }}
         allowFullScreen
       />
