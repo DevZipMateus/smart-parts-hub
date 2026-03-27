@@ -45,11 +45,11 @@ const Header = () => {
 
   return (
     <header className={headerClasses}>
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-2 md:py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/">
-              <img src={logo} alt="SMART PARTS NH Logo" className="h-20 w-20" />
+              <img src={logo} alt="SMART PARTS NH Logo" className="h-14 w-14 md:h-20 md:w-20" />
             </Link>
           </div>
 

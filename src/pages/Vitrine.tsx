@@ -56,8 +56,8 @@ const Vitrine = () => {
         title="Vitrine SMART PARTS NH"
         className="fixed left-0 right-0 w-full border-none"
         style={{
-          top: "112px",
-          height: "calc(100dvh - 112px)",
+          top: "var(--header-height, 80px)",
+          height: "calc(100dvh - var(--header-height, 80px))",
         }}
         allowFullScreen
       />
